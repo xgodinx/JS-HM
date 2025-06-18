@@ -1,9 +1,9 @@
 "use scrict"
 
 
-let myNum = 10; myStr = "some string"; myBool = true;
-let myArr = [1, 2, 3, 4, 5];
-let myObj = {
+const myNum = 10; myStr = "some string"; myBool = true;
+const myArr = [1, 2, 3, 4, 5];
+const myObj = {
     first: "First name",
     last: "Last name",
 }
