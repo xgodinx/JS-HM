@@ -14,5 +14,5 @@ decimal = decimal.toFixed(2);
 console.log(decimal);
 
 let myBigInt = 123n;
-myBigInt += 1n
+myBigInt += 1n;
 console.log(myBigInt, typeof(myBigInt));
