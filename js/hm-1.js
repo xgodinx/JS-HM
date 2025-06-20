@@ -16,3 +16,4 @@ console.log(decimal);
 let myBigInt = 123n;
 myBigInt += 1n;
 console.log(myBigInt, typeof(myBigInt));
+myArr instanceof Number;
