@@ -80,7 +80,7 @@ function outerFunction(num1){
   }
 }
 
-const outerNum1 = outerFunction(2) // замыкаем результат вывода главной функции в переменную
+const outerNum1 = outerFunction(2) // замыкаем результат вывода () главной функции в переменную
 const outerNum2 = outerNum1(3)  // замыкаем результат вызова innerFunction в переменную
 const outerNum3 = outerNum2(4)  // замыкаем результат вызова deepInnerFunction в переменную и получаем цепочку из вызовов, где outerNum3 берет значения из замыкания (лексической области видимости) и перемножает
 console.log(outerNum3) // 2 * 3 * 4 = 24
@@ -88,3 +88,5 @@ console.log(outerNum3) // 2 * 3 * 4 = 24
 
 const outerResult = outerFunction(2)(3)(4)
 console.log(outerResult) // 2 * 3 * 4 = 24
+
+
