@@ -115,11 +115,10 @@ function DateCalculator(initialDate) {
 
 const dateCalculator = new DateCalculator('2023-01-01')
 dateCalculator.addDays(5)
-console.log(dateCalculator.getResult()) // Виводить нову дату після додавання днів
+console.log(dateCalculator.getResult()) // 2023-01-06
 
 dateCalculator.subtractDays(3)
-console.log(dateCalculator.getResult()) // Виводить нову дату після віднімання днів
-
+console.log(dateCalculator.getResult()) // 2023-01-03
 
 
 // const d1 = new Date()
