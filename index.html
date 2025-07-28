@@ -3,15 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/nullstyle.css">
+  <link rel="stylesheet" href="/css/main.css">
   <title>Document</title>
-  <style>
-    html,body {
-      min-height: 100%;
-      
-    }
-  </style>
 </head>
 <body>
-  <script src="/js/hm-9.js" defer></script>
+  <div class="container">
+    <div class="slider">
+      <button class="slider__btn slider__btn--prev">‹</button>
+      
+      <div class="slider__viewport">
+        <div class="slider__track">
+          <div class="slider__img">
+            <img src="/img/im1.jpg" alt="">
+          </div>
+          <div class="slider__img">
+            <img src="/img/im2.jpg" alt="">
+          </div>
+          <div class="slider__img">
+            <img src="/img/im3.jpg" alt="">
+          </div>
+          <div class="slider__img">
+            <img src="/img/im4.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <button class="slider__btn slider__btn--next">›</button>
+    </div>
+    <div class="slider__dots"></div>
+    <div class="slider__auto-btn">
+      <button class="slider__play" >Play</button>
+      <button class="slider__stop" >Stop</button>
+    </div>
+    <div class="slider__status status">
+      <p class="status__started">Started AutoPlay</p>
+      <p class="status__stopped">Stopped</p>
+    </div>
+  <script src="/js/hm-10.js" defer></script>
 </body>
 </html>
