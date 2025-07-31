@@ -108,9 +108,11 @@ class Slider {
 
   turnNextSlide(){
     this.nextSlide(this.currentIndex + 1)
+    this.changeColorOneTime()
   }
   turnPrevSlide(){
     this.nextSlide(this.currentIndex - 1)
+    this.changeColorOneTime()
   }
 
   // funcs autoPlay
