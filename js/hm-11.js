@@ -181,6 +181,11 @@ class Slider {
   }
   
 
+  changeColorOneTime(){
+    const randomColor = (min = 0, max = 255) => Math.floor(Math.random() * (max - min + 1) +min )
+    const [r,g,b] = [randomColor(), randomColor(), randomColor()]
+    this.counter.style.color = `rgb(${r},${g},${b})`
+  }
   // hide , show text methods
 
   hideText(){
@@ -251,7 +256,7 @@ touchEnd() {
   this.disableButtons()
   this.updateDots()
   this.changeCounter()
-  
+  this.changeColorOneTime()
 }
 
   // resize methods
