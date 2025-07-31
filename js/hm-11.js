@@ -4,13 +4,6 @@
 class Slider {
   constructor(newSlider){
 
-    console.log('Инициализация слайдера...')
-    for (const [key, selector] of Object.entries(newSlider)) {
-    const el = document.querySelector(selector)
-    console.log(`${key}:`, el)
-}
-
-
     // DOM elements
     this.slider = document.querySelector(newSlider.slider)
     this.counter = document.querySelector(newSlider.counter)
