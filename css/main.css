@@ -71,7 +71,7 @@
   display: flex;
   justify-content: space-between;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0 auto 40px;
 }
 
 .slider__play{
@@ -145,3 +145,65 @@
   display: inline-block;
   color: rgb(red, green, blue);
 }
+
+
+
+.form {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  gap: 50px;
+}
+
+.email {
+}
+.email__input {
+
+}
+
+.url {
+}
+.url__input, .email__input {
+  padding: 12px 16px;
+  border: 2px solid #312f2f;
+  border-radius: 12px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  background-color: #f9f9f9;
+  color: #222;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  flex: 1 0 50%;
+}
+
+.url__input:focus, .email__input:focus{
+  box-shadow: 5px 5px 5px rgb(41, 39, 39);
+}
+
+.form__btn{
+  padding: 0 20px;
+  line-height: 40px;
+  border-radius: 14px;
+  background-color: rgb(58, 16, 54);
+  color: antiquewhite;
+  font-size: 20px;
+  box-shadow: 0 6px 0 #1b1b1b;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.form__btn:active{
+  
+  top: 3px;
+  box-shadow: 0 3px 0 #1b1b1b; 
+}
+
+.error{
+  color: red;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
