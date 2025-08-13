@@ -127,23 +127,27 @@ async function deleteData(id) {
 
 
 async function lauchFunctions(){
-  const getMethod = await getData('posts/1')
-  const postMethod = await postData('posts', {
+  await getData('posts/1')
+
+  await postData('posts', {
   title: 'My post',
   body: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.',
   userId: '1'
   })
-  const putMethod = await putData(1, {
+
+  await putData(1, {
   title: 'My post',
   body: 'dsaasdsadasdasdasdasddsadadaddasssssssss',
   userId: 1
   })
-  const patchmethod = await patchData(1, {
+
+  await patchData(1, {
   title: 'Changed title by PATCH',
   body: 'dsaasdsadasdasdasdasddsadadaddasssssssss',
   userId: 1
   })
-  const deleteMethod = await deleteData(1)
+  
+  await deleteData(1)
 
   
 }
