@@ -21,7 +21,11 @@ async function getData(segment) {
 
 }
 
-
+function validateStatus(error, status){
+  if(status < 200 || status > 300){
+    throw new Error(`${error}${status}`)
+  }
+}
 
 
 
@@ -36,9 +40,7 @@ async function postData(segment, data) {
     body: JSON.stringify(data)
   })
 
-  if(response.status < 200 || response.status > 300){
-    throw new Error(`HTTP request failed to post, status: ${response.status}`)
-  }
+  validateStatus('HTTP request failed to post, status:', response.status)
 
   const result = await response.json()
   console.log('postMethod >', result)
@@ -62,9 +64,7 @@ async function putData(id, data) {
       body: JSON.stringify(data)
      })
     
-    if(response.status < 200 || response.status > 300){
-      throw new Error(`HTTP request failed to put, status: ${response.status}`)
-    }
+    validateStatus('HTTP request failed to put, status:', response.status)
 
     const result = await response.json()
     console.log('putMethod >', result)
@@ -89,9 +89,7 @@ async function patchData(id, data) {
       body: JSON.stringify(data)
      })
     
-    if(response.status < 200 || response.status > 300){
-      throw new Error(`HTTP request failed to patch, status: ${response.status}`)
-    }
+    validateStatus('HTTP request failed to patch, status:', response.status)
 
     const result = await response.json()
     console.log('patchMethod >', result)
@@ -110,10 +108,8 @@ async function deleteData(id) {
      const response = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`,{
       method: 'DELETE'
      })
-    if(response.status < 200 || response.status > 300){
-      throw new Error(`HTTP request failed to delete, status: ${response.status}`)
-    }
 
+    validateStatus('HTTP request failed to delete, status:', response.status)
     const result = await response.json()
     console.log('deleteMethod >', result, `succesful delete by index: ${id}` )
     
