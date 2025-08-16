@@ -1,5 +1,5 @@
 .container{
-  margin: 40px auto 0;
+  margin: 10px auto 0;
   max-width: auto;
 }
 .counter{
@@ -16,6 +16,7 @@
   max-width: 600px;
   margin: 0 auto;
   user-select: none;
+  padding: 0 20px;
 }
 .slider__btn {
   position: absolute; 
@@ -42,12 +43,13 @@
   flex-shrink: 0;
   width: 100%;
   max-width: 100%;
-  height: 300px;
+  aspect-ratio: 16/9;
 }
 .slider__img img{
   display: block;
   object-fit: cover;
   width: 100%;
+  height: 100%;
 }
 
 .slider__btn--prev {
@@ -207,3 +209,114 @@
   margin-top: 10px;
 }
 
+
+
+.search {
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.search__title {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+.form__search-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+@media (max-width: 678px) {
+  .form__search-title{
+    flex-direction: column;
+
+  }
+  p.input{
+    width: 100%;
+    max-width: 100%;
+    
+  }
+}
+.input{
+  width: 100%;
+  max-width: 300px;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 1px solid #000000;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+.title__input {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.input__title {
+
+}
+.year__input {
+}
+.input__year {
+}
+.type__input {
+}
+.input__type {
+}
+.search__type {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 300px;
+  padding: 12px 16px;
+  font-size: 18px;
+  background-color: #8d8484;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  position: relative;
+}
+
+.type__title {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.type__list {
+  display: none;
+}
+.type__list li{
+  margin-bottom: 5px;
+  margin-left: 7px;
+}
+.type__list.open{
+  display: block;
+
+}
+.arrow__bottom {
+}
+.search__result  {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  line-height: 30px;
+  font-size: 22px;
+  font-weight: 600;
+  background-color: antiquewhite;
+  border-radius: 14px;
+  padding:10px 20px;
+  max-height: 250px;
+  overflow-y: scroll;
+}
+.search__result p{
+  border-bottom: 1px solid black;
+}

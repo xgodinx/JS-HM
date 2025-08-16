@@ -24,7 +24,7 @@ class Slider {
 
     // Static 
     this.currentIndex = 0
-    this.viewportWidth = this.viewport.clientWidth
+    this.viewportWidth = this.viewport.clientWidth - 40
     this.interval = null
     this.pressed = false
     this.colorInterval = null
@@ -202,7 +202,7 @@ class Slider {
 
 
   createDots(){
-  this.dots = [...this.images].map((el, index) => {
+  this.dots = [...this.images].map((_, index) => {
   const dot = document.createElement('div')
   dot.className = 'slider__dot'
   dot.addEventListener('click', () => this.nextSlide(index)) 
@@ -263,7 +263,7 @@ touchEnd() {
 
   resizeContainer() {
   const sliderWidth = this.slider.offsetWidth
-  this.container.style.width = `${sliderWidth + 300}px`
+  this.container.style.width = '100%'
 }
 
 

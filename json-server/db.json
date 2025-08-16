@@ -1,0 +1,77 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "a Kobze",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    },
+    {
+      "id": "12",
+      "title": "1"
+    },
+    {
+      "id": "",
+      "title": "qwe"
+    },
+    {
+      "id": "122",
+      "title": "1",
+      "views": 647.4746831559225
+    },
+    {
+      "id": "111",
+      "title": "2",
+      "views": 790
+    },
+    {
+      "id": "55",
+      "title": "выфв",
+      "views": 932596
+    },
+    {
+      "id": "777",
+      "title": "22",
+      "views": 899455
+    },
+    {
+      "id": "21",
+      "title": "1",
+      "views": 985921
+    },
+    {
+      "id": "2",
+      "title": "1",
+      "views": 216037
+    },
+    {
+      "id": "3",
+      "title": "qaz",
+      "views": 121666
+    },
+    {
+      "id": "11",
+      "title": "2",
+      "views": 74758
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

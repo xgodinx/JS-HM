@@ -39,6 +39,7 @@ async function postData(segment, data) {
     },
     body: JSON.stringify(data)
   })
+  .catch(error => console.log(error, response))
 
   validateStatus('HTTP request failed to post, status:', response.status)
 
