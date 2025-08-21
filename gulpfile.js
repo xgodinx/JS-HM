@@ -6,7 +6,7 @@ import cleanCSS from "gulp-clean-css";
 import fileInclude from "gulp-file-include";
 import replace from "gulp-replace";
 import del from "del";
-
+import ghPages from 'gh-pages';
 
 
 const sass = gulpSass(dartSass);
@@ -49,6 +49,7 @@ function serve() {
 function html() {
   return gulp.src(paths.html.src)
     .pipe(fileInclude())
+    .pipe(replace(/(src|href)="\/?([^"]+)"/g, '$1="/JS-HM/$2"'))
     .pipe(gulp.dest(paths.html.dest))
     .pipe(browserSync.stream());
 }
@@ -66,6 +67,10 @@ function styles() {
 function scripts() {
   return gulp.src(paths.scripts.src)
     .pipe(gulp.dest(paths.scripts.dest));
+}
+
+function deploy(cb) {
+  ghPages.publish('dist', cb);
 }
 
 
@@ -86,5 +91,5 @@ function watcher() {
 // Tasks
 export const build = gulp.series(clean, gulp.parallel(html, styles, scripts));
 export const dev = gulp.series(build, gulp.parallel(watcher, serve));
-
+export { deploy };
 export default dev;
