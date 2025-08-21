@@ -1,23 +1,21 @@
 {
   "name": "js-h-m",
   "version": "1.0.0",
-  "description": "",
-  "homepage": "https://github.com/xgodinx/JS-H-M#readme",
-  "bugs": {
-    "url": "https://github.com/xgodinx/JS-H-M/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/xgodinx/JS-H-M.git"
-  },
-  "license": "ISC",
-  "author": "",
-  "type": "commonjs",
-  "main": "index.js",
+  "description": "Gulp project with HTML, SCSS, images and live server",
+  "type": "module",
   "scripts": {
-    "test": "jest"
+    "start": "gulp",
+    "build": "gulp build"
   },
-  "dependencies": {
-    "json-server": "^1.0.0-beta.3"
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "del": "^6.1.1",
+    "gulp": "^5.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-imagemin": "^9.1.0",
+    "gulp-replace": "^1.1.4",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.70.0"
   }
 }

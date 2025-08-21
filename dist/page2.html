@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<body>
+      <div class="form__row">
+      <form action="#" name="formfetch" class="form">
+        <input type="text" value="" name="name2" class="search__name" placeholder="search film">
+        <input type="text" value="" placeholder="film year" name="year2" class="search__year">
+        <select name="type" class="search__type" >
+          <option value="" class="type__option">Select film type</option>
+          <option value="movie" class="type__option">Movie</option>
+          <option value="series" class="type__option" >Series</option>
+          <option value="episode" class="type__option">Episode</option>
+        </select>
+      </form>
+    </div>
+    <div class="total__results"></div>
+    <div class="search__result"></div>
+
+
+     <form action="#" name="submit" class="form__submit">
+      <div class="submit__inputs">
+        <input type="text" value="" name="input__name" class="input__name" placeholder="Enter the name">
+        <input type="text" value="" name="input__year" class="input__year" placeholder="Enter a Year">
+        <select name="select__type" class="select__by-type" >Select type
+          <option value="" class="option">Select type</option>
+          <option value="movie" class="option">Movie</option>
+          <option value="series" class="option">Series</option>
+          <option value="episode" class="option">Episode</option>
+        </select>
+      </div>
+      <button class="form__btn" type="submit">Search</button>
+    </form>
+    <div class="total__result"></div>
+    <div class="search__results"></div>
+
+  <div class="container">
+    <div class="search">
+        <h2 class="search__title title">Find your film by title!</h2>
+        <form action="#" name="film-form" class="form__search-title">
+          <p class="title__input"> 
+            <input type="text" name="title" class="input__title input" placeholder="Film name">
+          </p>
+          <p class="year__input"> 
+            <input type="text" name="year" class="input__year input" placeholder="Film year">
+          </p>
+          <div class="search__type">
+            <div class="type__title"> <span class="type__title-span">Select type</span>
+              <ul class="type__list">
+                <li class="list__point">Movie</li>
+                <li class="list__point">Series</li>
+                <li class="list__point">Episode</li>
+              </ul>
+            </div>
+            <div class="arrow__bottom">▼</div>
+          </div>
+        </form>
+        <div class="search__result"></div>
+      </div>
+    <p class="counter">My Slider</p>
+    <div class="slider__status status">
+      <span class="status__started">Started AutoPlay</span>
+      <span class="status__stopped">Slider Stopped</span>
+    </div>
+    <div class="slider">
+      <button class="slider__btn slider__btn--prev">‹</button>
+      
+      <div class="slider__viewport">
+        <div class="slider__track">
+          <div class="slider__img">
+            <img src="/img/im1.jpg" alt="">
+          </div>
+          <div class="slider__img">
+            <img src="/img/im2.jpg" alt="">
+          </div>
+          <div class="slider__img">
+            <img src="/img/im3.jpg" alt="">
+          </div>
+          <div class="slider__img">
+            <img src="/img/im4.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <button class="slider__btn slider__btn--next">›</button>
+    </div>
+    <div class="slider__dots"></div>
+    
+    <div class="slider__auto-btn">
+      <button class="slider__play" >Play
+      </button>
+      <button class="slider__hide-btn">Hide text</button>
+      <button class="slider__stop" >Stop</button>
+    </div>
+  </div>
+  <div class="abult__container">
+      <div class="abult">
+      <div class="abult__row">
+        <div class="abult__title title">Adult</div>
+        <button class="abult__btn btn">Add</button>
+        <div class="abult__counter counter">
+          <button class="abult__minus minus">-</button>
+          <div class="abult__value value">0</div>
+          <button class="abult__plus plus">+</button>
+        </div>
+      </div>
+      <div class="abult__row">
+        <div class="pensioner__title title">Pensioner</div>
+        <button class="pensioner__btn btn">Add</button>
+        <div class="pensioner__counter counter">
+          <button class="pensioner__minus minus">-</button>
+          <div class="pensioner__value value">0</div>
+          <button class="pensioner__plus plus">+</button>
+        </div>
+      </div>
+      <div class="abult__row">
+        <div class="child__title title">Child</div>
+        <button class="child__btn btn">Add</button>
+        <div class="child__counter counter">
+          <button class="child__minus minus">-</button>
+          <div class="child__value value">0</div>
+          <button class="child__plus plus">+</button>
+        </div>
+      </div>
+      <div class="abult__row">
+        <div class="student__title title">Student</div>
+        <button class="student__btn btn">Add</button>
+        <div class="student__counter counter">
+          <button class="student__minus minus">-</button>
+          <div class="student__value value">0</div>
+          <button class="student__plus plus">+</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+      <form action="#" name="valForm" class="form__validation">
+      <div class="form__login">
+        <input type="text" value="" name="login" class="login" placeholder="login">
+      </div>
+      <div class="form__password">
+        <input type="password" value="" name="password" class="password" placeholder="password">
+      </div>
+      <div class="form__email">
+        <input type="email" value="" name="email" class="email" placeholder="email">
+      </div>
+      <div class="radio__boss">
+        <div class="form__radio">
+          <input type="radio" name="radio"  value="man" class="radio"> Man
+        </div>
+        <div class="form__radio2">
+          <input type="radio" name="radio" value="woman" class="radio"> Woman
+        </div>
+      </div>
+      <div class="form__checkbox">
+        <input type="checkbox" value="" name="checkbox" class="checkbox"> Confirm info
+      </div>
+      <div class="form__textarea">
+        <textarea name="textarea" class="textarea" placeholder="write about yourself" maxlength="50"></textarea>
+        <div class="textarea__count">0 / 50</div>
+      </div>
+      <button  class="form__btn" style="margin-bottom: 35px;" name="button" type="submit">Send</button>
+    </form>
+    
+  <!-- <script src="/js/hm-13.js" type="module"></script>
+  <script src="/js/hm-11.js" type="module"></script> -->
+  <script src="/js/hm-15.js" defer type="module" ></script>
+  <!-- <script src="/js/counter.js" type="module"></script>
+  <script src="/js/form-validation.js" type="module"></script>
+  <script src="/js/fetchFilms.js" ></script> -->
+</body>
+</html>
+

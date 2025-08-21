@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="/css/nullstyle.css"> -->
+  <link rel="stylesheet" href="/css/style.css">
+  <title>dasd</title>
+</head>
+<body>
+
+  @@include('html/fetchFilms.html', {})
+
+  <div class="container">
+    <p class="counter__slider">My Slider</p>
+    <div class="slider__status status">
+      <span class="status__started">Started AutoPlay</span>
+      <span class="status__stopped">Slider Stopped</span>
+    </div>
+    <div class="slider">
+      <button class="slider__btn slider__btn--prev">‹</button>
+      
+      <div class="slider__viewport">
+        <div class="slider__track">
+          <div class="slider__img">
+            <img src="img/im1.jpg" alt="">
+          </div>
+          <div class="slider__img">
+            <img src="img/im2.jpg" alt="">
+          </div>
+          <div class="slider__img">
+            <img src="img/im3.jpg" alt="">
+          </div>
+          <div class="slider__img">
+            <img src="img/im4.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <button class="slider__btn slider__btn--next">›</button>
+    </div>
+    <div class="slider__dots"></div>
+    
+    <div class="slider__auto-btn">
+      <button class="slider__play" >Play
+      </button>
+      <button class="slider__hide-btn">Hide text</button>
+      <button class="slider__stop" >Stop</button>
+    </div>
+  </div>
+
+  @@include('html/counter.html', {})
+  @@include('html/form.html', {})
+
+  <script src="/js/hm-11.js" defer type="module" ></script>
+  <script src="/js/counter.js" defer type="module" ></script>
+  <script src="/js/form-validation.js" defer type="module" ></script>
+  <script src="/js/fetchFilms.js" defer type="module" ></script>
+</body>
+</html>
+
